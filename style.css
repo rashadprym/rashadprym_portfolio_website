@@ -117,6 +117,14 @@ b {
     transition: height 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+#pph-hireme {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    left: 71rem;
+    bottom: 0;
+}
+
 .dropdown_menu.open {
     width: 60px;
     height: 300px;
