@@ -160,36 +160,17 @@ toggleBtn.onclick = function() {
         'fa-solid fa-bars'
 }
 
-// center.addEventListener('mousemove', function(e) {
-//     var x = e.clientX;
-//     var y = e.clientY;
-//     cursor.style.left = x + "px";
-//     cursor.style.top = y + "px";
-// })
-
-
-// let container = document.querySelector(".center-container");
-
-// container.addEventListener("mouseenter", function(e) {
-//     let circle = document.createElement("div");
-//     circle.style.position = "absolute";
-//     circle.style.borderRadius = "50%";
-//     circle.style.width = "50px";
-//     circle.style.height = "50px";
-//     circle.style.backgroundColor = "red";
-//     circle.style.zIndex = "999";
-//     container.appendChild(circle);
-
-//     container.addEventListener("mousemove", function(e) {
-//         let x = e.clientX - container.offsetLeft - (circle.offsetWidth / 2);
-//         let y = e.clientY - container.offsetTop - (circle.offsetHeight / 2);
-//         circle.style.left = x + "px";
-//         circle.style.top = y + "px";
-//     });
-// });
-// container.addEventListener("mouseleave", function(e) {
-//     let circle = document.querySelector(".circle");
-//     if (circle) {
-//         container.removeChild(circle);
-//     }
-// });
+    // PeoplePerHour
+function(d, s) {
+            var useSSL = 'https:' == document.location.protocol;
+            var js, where = d.getElementsByTagName(s)[0],
+                js = d.createElement(s);
+            js.src = (useSSL ? 'https:' : 'http:') + '//www.peopleperhour.com/hire/71066424/9907641.js?width=245&height=320&orientation=vertical&theme=light&rnd=' + parseInt(Math.random() * 10000, 10);
+            try {
+                where.parentNode.insertBefore(js, where);
+            } catch (e) {
+                if (typeof console !== 'undefined' && console.log && e.stack) {
+                    console.log(e.stack);
+                }
+            }
+        }(document, 'script'));
